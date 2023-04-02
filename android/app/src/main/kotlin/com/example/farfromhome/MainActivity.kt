@@ -33,3 +33,21 @@ public class MainActivity extends AppCompatActivity {
                 houses.add(house);
             }
         });
+        
+        btnView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String houseList = "";
+                for (int i = 0; i < houses.size(); i++) {
+                    houseList += "House " + (i+1) + ": " + houses.get(i).getLocation() + ", " + houses.get(i).getNumberOfRooms() + " rooms, $" + houses.get(i).getRent() + "/month\n\n";
+                }
+
+                // Display the list of houses in a new activity
+                Intent intent = new Intent(MainActivity.this, HouseListActivity.class);
+                intent.putExtra("houseList", houseList);
+                startActivity(intent);
+            }
+        });
+    }
+}
+
