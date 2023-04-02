@@ -21,3 +21,15 @@ public class MainActivity extends AppCompatActivity {
         etRent = findViewById(R.id.etRent);
         btnAdd = findViewById(R.id.btnAdd);
         btnView = findViewById(R.id.btnView);
+        
+        btnAdd.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String location = etLocation.getText().toString();
+                int numRooms = Integer.parseInt(etNumRooms.getText().toString());
+                double rent = Double.parseDouble(etRent.getText().toString());
+
+                House house = new House(location, numRooms, rent);
+                houses.add(house);
+            }
+        });
