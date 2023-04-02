@@ -1,10 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="default_web_client_id" translatable="false">453015779547-d7pggumgu5d0da2qs27aml7332trcvqo.apps.googleusercontent.com</string>
-    <string name="gcm_defaultSenderId" translatable="false">453015779547</string>
-    <string name="google_api_key" translatable="false">AIzaSyCyC_WDd2fReeqnnUCRexhcNrFPuWQwC2w</string>
-    <string name="google_app_id" translatable="false">1:453015779547:android:e39b2d9438430d25bc34fe</string>
-    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCyC_WDd2fReeqnnUCRexhcNrFPuWQwC2w</string>
-    <string name="google_storage_bucket" translatable="false">habittracker-4608f.appspot.com</string>
-    <string name="project_id" translatable="false">habittracker-4608f</string>
-</resources>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
