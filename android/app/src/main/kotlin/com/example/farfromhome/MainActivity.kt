@@ -1,6 +1,12 @@
-package com.example.farfromhome
+import androidx.appcompat.app.AppCompatActivity;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import java.util.ArrayList;
 
-import io.flutter.embedding.android.FlutterActivity
+public class MainActivity extends AppCompatActivity {
 
-class MainActivity: FlutterActivity() {
-}
+    EditText etLocation, etNumRooms, etRent;
+    Button btnAdd, btnView;
+    ArrayList<House> houses = new ArrayList<>();
