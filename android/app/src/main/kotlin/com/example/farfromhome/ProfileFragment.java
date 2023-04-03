@@ -315,6 +315,8 @@ public class ProfileFragment extends Fragment {
         takePhoto();
     }
 
+    
+    
     public void addPhotoFromLibrary() {
         System.out.println("ContextCompat.checkSelfPermission(this, Manifest.permission.CAMERA) " + ContextCompat.checkSelfPermission(requireContext(), Manifest.permission.CAMERA));
         if (ContextCompat.checkSelfPermission(requireContext(), Manifest.permission.CAMERA) == PackageManager.PERMISSION_GRANTED) {
