@@ -105,7 +105,6 @@ public class LoginFragment extends AppCompatActivity {
         }
         signInEmailAndPassword(email, password);
     }
-
     
     private void signInEmailAndPassword(String email, String password) {
 
