@@ -78,6 +78,8 @@ public class ProfileFragment extends Fragment {
         }
     });
 
+    
+    
     private final ActivityResultLauncher<Uri> selectCameraLauncher = registerForActivityResult(new ActivityResultContracts.TakePicture(), result -> {
         if (result) {
 
