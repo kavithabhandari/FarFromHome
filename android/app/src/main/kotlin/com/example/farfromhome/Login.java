@@ -134,7 +134,6 @@ public class LoginFragment extends AppCompatActivity {
     }
 
     private void loginWithGoogle(View view) {
-
         oneTapClient.beginSignIn(signInRequest).addOnSuccessListener(LoginFragment.this, result -> {
             try {
                 startIntentSenderForResult(result.getPendingIntent().getIntentSender(), REQ_ONE_TAP, null, 0, 0, 0);
