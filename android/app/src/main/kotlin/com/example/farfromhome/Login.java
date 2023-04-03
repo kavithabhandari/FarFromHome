@@ -106,9 +106,7 @@ public class LoginFragment extends AppCompatActivity {
         signInEmailAndPassword(email, password);
     }
 
-    /**
-     *
-     */
+    
     private void signInEmailAndPassword(String email, String password) {
 
         mAuth.signInWithEmailAndPassword(email, password).addOnCompleteListener(this, task -> {
