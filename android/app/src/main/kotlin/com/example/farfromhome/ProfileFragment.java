@@ -274,7 +274,6 @@ public class ProfileFragment extends Fragment {
 
     private void editProfileName(View view) {
 
-
         TextInputEditText newEditText = new TextInputEditText(requireContext());
         newEditText.setInputType(InputType.TYPE_CLASS_TEXT);
         newEditText.setSingleLine();
